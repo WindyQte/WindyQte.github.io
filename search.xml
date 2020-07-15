@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo教程</title>
+    <title>blog建站的第一篇文章</title>
     <url>/2020/07/15/%E2%80%9Chexo%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>分类1</category>
-        <category>分类2</category>
+        <category>1</category>
+        <category>2</category>
       </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-      </tags>
   </entry>
   <entry>
     <title>“”xxxxxx</title>
