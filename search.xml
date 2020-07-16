@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>page</title>
+    <url>/2020/07/16/page/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>排序算法</title>
     <url>/2020/07/15/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p><img src="/../../img/sort.png" alt="avatar"></p>
