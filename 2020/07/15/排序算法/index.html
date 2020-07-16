@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>前端基础算法题 - MiuIsWindy&#39;s Blog</title>
+    <title>排序算法 - MiuIsWindy&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="排序算法 
-冒泡排序 
-1 function bubleSort(arr) {2 var len = arr.length3 for (let outer = len ;outer &amp;gt; )4 ,"> 
+    <meta name="description" content="排序算法
+
+冒泡排序   冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直,"> 
     <meta name="author" content="Miyu"> 
     <link rel="alternative" href="atom.xml" title="MiuIsWindy&#39;s Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -42,7 +42,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">前端基础算法题</h3>
+    <h3 class="subtitle">排序算法</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -57,21 +57,22 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">前端基础算法题</h1>
+        <h1 class="title">排序算法</h1>
         <div class="stuff">
             <span>七月 15, 2020</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/1/" rel="tag">1</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">-技术</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h2 id=""><a href="#" class="headerlink" title=" "></a> <img src="%22/../../../.deploy_git/img/OnLog.png%22" alt="时间复杂度"></h2><ul>
-<li>冒泡排序 <blockquote>
-<p>1 <code>function bubleSort(arr) {</code><br>2 <code>var len = arr.length</code><br>3 <code>for (let outer = len ;outer &gt; )</code><br>4 <code>5</code><br>6 <code>7</code><br>8 <code>10</code><br>12 <code>14</code><br>16 <code>}</code></p>
-</blockquote>
-</li>
-</ul>
+            <h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p><img src="/../../img/sort.png" alt="avatar"></p>
+<hr>
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><p>   冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢”浮”到数列的顶端。<br>   作为最简单的排序算法之一，冒泡排序给我的感觉就像 Abandon 在单词书里出现的感觉一样，每次都在第一页第一位，所以最熟悉。冒泡排序还有一种优化算法，就是立一个 flag，当在一趟序列遍历中元素没有发生交换，则证明该序列已经有序。但这种改进对于提升性能来</p>
+<hr>
+<h4 id="JavaScript-版本"><a href="#JavaScript-版本" class="headerlink" title="JavaScript 版本"></a>JavaScript 版本</h4><hr>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">bubleSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> len = arr.length;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len <span class="number">-1</span>;i++ )&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">let</span> j =<span class="number">0</span>; j&lt;len<span class="number">-1</span>-i; j++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">              <span class="keyword">let</span> temp = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">                arr[j] = temp;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">       <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="auto">

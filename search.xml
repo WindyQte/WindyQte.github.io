@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>blog建站的第一篇文章</title>
-    <url>/2020/07/15/%E2%80%9Chexo%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>1</category>
-        <category>2</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>前端基础算法题</title>
-    <url>/2020/07/15/%E2%80%9C%E2%80%9Dxxxxxx/</url>
-    <content><![CDATA[<h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h2 id=""><a href="#" class="headerlink" title=" "></a> <img src="%22/../../../.deploy_git/img/OnLog.png%22" alt="时间复杂度"></h2><ul>
-<li>冒泡排序 <blockquote>
-<p>1 <code>function bubleSort(arr) {</code><br>2 <code>var len = arr.length</code><br>3 <code>for (let outer = len ;outer &gt; )</code><br>4 <code>5</code><br>6 <code>7</code><br>8 <code>10</code><br>12 <code>14</code><br>16 <code>}</code></p>
-</blockquote>
-</li>
-</ul>
+    <title>排序算法</title>
+    <url>/2020/07/15/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p><img src="/../../img/sort.png" alt="avatar"></p>
+<hr>
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><p>   冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢”浮”到数列的顶端。<br>   作为最简单的排序算法之一，冒泡排序给我的感觉就像 Abandon 在单词书里出现的感觉一样，每次都在第一页第一位，所以最熟悉。冒泡排序还有一种优化算法，就是立一个 flag，当在一趟序列遍历中元素没有发生交换，则证明该序列已经有序。但这种改进对于提升性能来</p>
+<hr>
+<h4 id="JavaScript-版本"><a href="#JavaScript-版本" class="headerlink" title="JavaScript 版本"></a>JavaScript 版本</h4><hr>
+ <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">bubleSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> len = arr.length;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len <span class="number">-1</span>;i++ )&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">let</span> j =<span class="number">0</span>; j&lt;len<span class="number">-1</span>-i; j++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">              <span class="keyword">let</span> temp = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">                arr[j] = temp;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">       <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
 ]]></content>
+      <categories>
+        <category>-排序</category>
+      </categories>
       <tags>
-        <tag>1</tag>
+        <tag>-技术</tag>
       </tags>
   </entry>
 </search>
